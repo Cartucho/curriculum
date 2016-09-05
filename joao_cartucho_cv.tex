@@ -1,0 +1,137 @@
+\documentclass{article}
+
+\usepackage[portuguese,english]{babel}
+\usepackage{eurosym}
+\usepackage{iflang}
+\usepackage{resume}
+
+\begin{document}
+
+\selectlanguage{english}
+
+\name{\bf JO\~{A}O CARTUCHO}
+
+\begin{llist}
+\sectiontitle{Education}
+
+\employer{POLITECNICO DI TORINO} \location{Torino, TO, ITALY}
+\dates{09/2015--08/2016}
+\IfLanguageName{english}
+{
+Abroad as an Erasmus student.
+}
+{
+Erasmus.
+}
+
+\employer{INSTITUTO SUPERIOR T\'{E}CNICO, LISBON} \location{Lisbon, LIS, PORTUGAL}
+\dates{09/2013--now}
+\IfLanguageName{english}
+{
+(planned) M.S. in Aeronautical and Space Engineering.\\
+Expected graduation date: 07, 2017
+}
+{
+(planeado) Mestrado Integrado em Engenharia Aeroespacial.\\
+Data de gradua\c{c}\~{a}o esperada: 07, 2017
+}
+
+% Research Experience
+\IfLanguageName{english}
+{
+\sectiontitle{Work Experience}
+}
+{
+\sectiontitle{Exp\'{e}rience Professionnelle}
+}
+\vspace{-0.33cm}
+
+\employer{GOOGLE SUMMER OF CODE}\location{Torino, Italy}
+\dates{05/2016--08/2016}
+\IfLanguageName{english}
+{
+Multi-language OpenCV Tutorials in Python, C++ and Java
+\vspace{-0.33cm}
+\begin{itemize}
+ \item developing open source code.
+\end{itemize}
+}
+{
+Multi-language OpenCV Tutorials in Python, C++ and Java
+\vspace{-0.33cm}
+\begin{itemize}
+ \item developing open source code.
+\end{itemize}
+}
+
+% Project Activities
+\IfLanguageName{english}
+{
+\sectiontitle{Project Activities}
+\vspace{-0.4cm}
+
+\employer{Fingerprint Badging System} \location{Torino, Italy}
+\dates{02/2016--07/2016}
+Course: Project and Laboratory on Communication	Systems.\\
+Developing a Badging System Device using .NET Gadgeteer FEZ Spider Kit from GHI Electronics.\\
+Final grade 1-30 : 30L (excellent)
+
+\employer{Handwriting Digit Recognition} \location{Torino, Italy}
+\dates{09/2015--07/2016}
+Course: Computer Vision.\\
+Developing Software to recognize handwritten digits in a photo.\\
+Final Project grade 1-5 : 5
+
+\employer{Clustering Algorithm of Vector Quantization} \location{Torino, Italy}
+\dates{09/2015--07/2016}
+Course: Artificial intelligence.\\
+Clustering the MNIST 10-digit set database, obtaining a final error of 4.8\%\\
+using a 10 minutes computation over the 60K-digits set.\\
+Final grade 1-30 : 27
+
+}
+{
+\sectiontitle{Activit\'{e}s Professionnelles}
+
+Em Portugues
+
+}
+
+% Skills
+\IfLanguageName{english}
+{
+\sectiontitle{Skills}
+Programming Languages: C, C++, C\#, Java, Matlab, Python\\
+Programming Libraries: OpenCV \\
+Extra Interests: HTML, Javascript, jQuery \\
+Languages: Portuguese (native), English (fluent), Spanish (beginner), Italian (fluent)
+}
+{
+\sectiontitle{Comp\'{e}tences}
+{\em Comp\'{e}tences}: Vision, Robotique, Programmation, Architecte Logiciel, Management\\
+{\em Langages de Programmation}: C++, Python\\
+{\em Biblioth\`{e}ques Logicielles}: OpenCV, ROS, Boost, OpenMP, TBB, PVM, MPI \\
+{\em Autres Int\'{e}r\^{e}ts}: Android, Drupal, Matlab, Javascript, PHP, NOSQL \\
+{\em Langues}: Fran\c{c}ais (natif), Anglais (bilingue), Espagnol (fluent), Portugais (d\'{e}butant), Italien
+(d\'{e}butant)
+}
+
+% Software
+\IfLanguageName{english}
+{
+\sectiontitle{Software}
+{\em OpenCV Toggle Buttons}: developer of the OpenCV toggle buttons used in the official tutorials and documentation.
+}
+{
+pt
+}
+
+\sectiontitle{References}
+
+\input{references.tex}
+
+\end{llist}
+
+{\em Last update: \today}
+
+\end{document}
