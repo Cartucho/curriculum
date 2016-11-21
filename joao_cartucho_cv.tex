@@ -4,6 +4,8 @@
 \usepackage{eurosym}
 \usepackage{iflang}
 \usepackage{resume}
+\usepackage{hyperref}
+\usepackage{textcomp}
 
 \begin{document}
 
@@ -12,13 +14,31 @@
 \name{\bf JO\~{A}O CARTUCHO}
 
 \begin{llist}
+
+% Personal Information
+\sectiontitle{Personal Information}
+
+\textit{\textnumero 7 R/C Dto, Rua Filinto El\'{i}sio, 1300-241, Lisbon, Portugal}
+
+\textit{Mobile:} 00351 913 113 753\\
+\textit{E-mail address: }\href{mailto:to.cartucho@gmail.com}{to.cartucho@gmail.com}\\
+
+% Education
 \sectiontitle{Education}
 
 \employer{POLITECNICO DI TORINO} \location{Torino, TO, ITALY}
 \dates{09/2015--08/2016}
 \IfLanguageName{english}
 {
-Abroad as an Erasmus student.
+Abroad as an Erasmus student in Computer Science Courses.
+\begin{itemize}
+\item[\textendash] Sorting algorithms
+\item[\textendash] Complex data structures and ADTs (linked lists, queues, stacks, heaps, trees, hash tables and graphs) and related algorithms
+\item[\textendash] Ability to evaluate algorithm complexity and improve efficiency in terms of execution time and/or memory use
+\item[\textendash] Linear programming, exact and heuristic Optimization methods, Network flow problems
+\item[\textendash] Strategies for problem solving, Logic, Knowledge representation, Deep Learning, Pattern Recognition, Neural Networks
+\item[\textendash] Computer Vision, Software Engineering, Game Development, Ambient Intelligence and Communication Systems
+\end{itemize}
 }
 {
 Erasmus.
@@ -28,32 +48,45 @@ Erasmus.
 \dates{09/2013--now}
 \IfLanguageName{english}
 {
-(planned) M.S. in Aeronautical and Space Engineering.\\
-Expected graduation date: 07, 2017
+(planned) M.S. in Aero-Space Engineering.\\
+Expected graduation date: 12, 2017\\
+Current Master's Average (0-20): 17.44
+
+\begin{itemize}
+\item[\textendash] Cutting-edge technologies, which are materialized into airplanes, helicopters, robotized aircrafts, spaceships and satellites.
+\item[\textendash] All stages of the life-cycle of a vehicle, from its conception and project, to the operation and maintenance, tests and production.
+\end{itemize}
 }
 {
 (planeado) Mestrado Integrado em Engenharia Aeroespacial.\\
-Data de gradua\c{c}\~{a}o esperada: 07, 2017
+Data de gradua\c{c}\~{a}o esperada: 12, 2017
 }
 
-% Research Experience
+\employer{UNIVERSITY ENTRANCE EXAMINATION} \location{PORTUGAL}
+National Exams (final grade 0-20):
+\begin{itemize}
+\item[\textendash] Mathematics A: 18.1
+\item[\textendash] Physics and Chemistry: 19.8
+\end{itemize}
+
+% Internship Experience
 \IfLanguageName{english}
 {
-\sectiontitle{Work Experience}
+\sectiontitle{Internship Experience}
 }
 {
 \sectiontitle{Exp\'{e}rience Professionnelle}
 }
 \vspace{-0.33cm}
 
-\employer{GOOGLE SUMMER OF CODE}\location{Torino, Italy}
+\employer{GOOGLE SUMMER OF CODE 2016}\location{Torino, Italy}
 \dates{05/2016--08/2016}
 \IfLanguageName{english}
 {
-Multi-language OpenCV Tutorials in Python, C++ and Java
+\href{https://summerofcode.withgoogle.com/archive/2016/projects/6414610965987328/}{Multi-language OpenCV Tutorials in Python, C++ and Java}
 \vspace{-0.33cm}
 \begin{itemize}
- \item developing open source code.
+ \item[\textendash] OpenCV is an open source image processing library extensively used in C++, Python, Java and more than 15 other languages. With the big variety of supported languages appeared the difficulty to find a tutorial in an appropriate language and to write one without duplicating effort or maintenance. In this project we added the possibility to write multi-language tutorials that a user can dynamically change to its preferred language if available. We unified some existing tutorials and provided an infrastructure for checking the validity of the code used in tutorials. In the end, tutorials became easier to write, well split between code and meta-data, and most importantly, more valid and language friendly for the user.
 \end{itemize}
 }
 {
@@ -74,20 +107,20 @@ Multi-language OpenCV Tutorials in Python, C++ and Java
 \dates{02/2016--07/2016}
 Course: Project and Laboratory on Communication	Systems.\\
 Developing a Badging System Device using .NET Gadgeteer FEZ Spider Kit from GHI Electronics.\\
-Final grade 1-30 : 30L (excellent)
+Final grade 0-30 : 30L (excellent)
 
 \employer{Handwriting Digit Recognition} \location{Torino, Italy}
 \dates{09/2015--07/2016}
 Course: Computer Vision.\\
 Developing Software to recognize handwritten digits in a photo.\\
-Final Project grade 1-5 : 5
+Final Project grade 0-5 : 5
 
 \employer{Clustering Algorithm of Vector Quantization} \location{Torino, Italy}
 \dates{09/2015--07/2016}
 Course: Artificial intelligence.\\
 Clustering the MNIST 10-digit set database, obtaining a final error of 4.8\%\\
 using a 10 minutes computation over the 60K-digits set.\\
-Final grade 1-30 : 27
+Final grade 0-30 : 27
 
 }
 {
@@ -101,10 +134,9 @@ Em Portugues
 \IfLanguageName{english}
 {
 \sectiontitle{Skills}
-Programming Languages: C, C++, C\#, Java, Matlab, Python\\
-Programming Libraries: OpenCV \\
-Extra Interests: HTML, Javascript, jQuery \\
-Languages: Portuguese (native), English (fluent), Spanish (beginner), Italian (fluent)
+Programming Languages: C (grade 19/20), C++, C\#, Java (grade 30/30), Matlab, Python, HTML, Javascript, jQuery\\
+Extra Interests: OpenCV, CPLEX, Solid Works, Photoshop, Sony Vegas, Micro Framework.NET, ROS, Adobe Illustrator, Unity\\
+Languages: Portuguese (native), English (fluent) - Cambridge ESOL - FCE, Italian (fluent), Spanish (beginner)
 }
 {
 \sectiontitle{Comp\'{e}tences}
@@ -114,16 +146,6 @@ Languages: Portuguese (native), English (fluent), Spanish (beginner), Italian (f
 {\em Autres Int\'{e}r\^{e}ts}: Android, Drupal, Matlab, Javascript, PHP, NOSQL \\
 {\em Langues}: Fran\c{c}ais (natif), Anglais (bilingue), Espagnol (fluent), Portugais (d\'{e}butant), Italien
 (d\'{e}butant)
-}
-
-% Software
-\IfLanguageName{english}
-{
-\sectiontitle{Software}
-{\em OpenCV Toggle Buttons}: developer of the OpenCV toggle buttons used in the official tutorials and documentation.
-}
-{
-pt
 }
 
 \sectiontitle{References}

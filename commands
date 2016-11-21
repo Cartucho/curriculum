@@ -1,0 +1,3 @@
+sudo apt-get install texlive-latex-base
+sudo apt-get install texlive-lang-portuguese
+sudo apt-get install texlive-fonts-recommended 
