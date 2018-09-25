@@ -1,9 +1,70 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>João Cartucho - Portfolio</title>
+  </head>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+  <style type="text/css">
+    body{
+      margin: 0;
+      padding: 0;
+      font-family: arial;
+      background-color: #000;
+    }
+    .portfolio-item h1{
+      font-size: 150px;
+    }
+    .portfolio-list{
+      color: rgba(255,255,255,1);
+      text-align: center;
+      list-style-type: none;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    a:link, a:visited {
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    a:hover, a:active {
+      text-decoration: underline overline;
+    }
+    .art{
+      background-image: url(color.jpg);
+      animation: animate 15s linear infinite;
+    }
+    .robotics{
+      background-image: url(pepper_50_medium.jpg);
+      animation: animate 15s linear infinite;
+    }
 
-</body>
-</html> 
+    @keyframes animate{
+      0%{
+        background-position: right 0px top -510px;
+      }
+
+      40%{
+        background-position: right 0px top -450px;
+      }
+    }
+
+    .art:hover{
+      background-image: url(color.jpg);
+    }
+  </style>
+
+  <body>
+    <ul class="portfolio-list">
+
+      <li class="portfolio-item">
+        <h1 class="art"><a href="https://github.com/Cartucho/resume/blob/master/joao_cartucho_cv.pdf">art</a></h1>
+      </li>
+
+      <li class="portfolio-item">
+        <h1 class="robotics"><a href="https://github.com/Cartucho/resume/blob/master/joao_cartucho_cv.pdf">robotics</a></h1>
+      </li>
+    </ul>
+  </body>
+</html>
