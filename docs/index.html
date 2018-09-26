@@ -13,7 +13,7 @@
       background-color: #000;
     }
     .portfolio-item h1{
-      font-size: 150px;
+      font-size: 130px;
     }
     .portfolio-list{
       color: rgba(255,255,255,1);
@@ -33,16 +33,18 @@
     }
     .art{
       background-image: url(color.jpg);
+      background-size: cover;
       animation: animate 15s linear infinite;
     }
     .robotics{
-      background-image: url(pepper_50_medium.jpg);
+      background-image: url(robocup.JPG);
+      background-size: cover;
       animation: animate 15s linear infinite;
     }
 
     @keyframes animate{
       0%{
-        background-position: right 0px top -510px;
+        background-position: right 0px top -200px;
       }
 
       40%{
@@ -50,20 +52,21 @@
       }
     }
 
-    .art:hover{
-      background-image: url(color.jpg);
+    .portfolio-list p{
+      margin-top: 5%;
+      font-size: 20px;
     }
   </style>
 
   <body>
     <ul class="portfolio-list">
-
+      <p><b>João Cartucho</b>: "Let me introduce you to my little world..."</p>
       <li class="portfolio-item">
-        <h1 class="art"><a href="https://github.com/Cartucho/resume/blob/master/joao_cartucho_cv.pdf">art</a></h1>
+        <h1 class="art"><a href="art.html">art</a></h1>
       </li>
 
       <li class="portfolio-item">
-        <h1 class="robotics"><a href="https://github.com/Cartucho/resume/blob/master/joao_cartucho_cv.pdf">robotics</a></h1>
+        <h1 class="robotics"><a href="robotics.html">robotics</a></h1>
       </li>
     </ul>
   </body>

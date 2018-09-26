@@ -1,0 +1,116 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>João Cartucho - Portfolio</title>
+  </head>
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0px;
+      background-color: #000;
+      font-family: Comfortaa;
+    }
+
+    slider {
+      display: block;
+      width: 100%;
+      height: 90%;
+      background-color: #1f1f1f;
+      overflow: hidden;
+      position: absolute;
+    }
+
+    slider > * {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: #1f1f1f;
+      overflow: hidden;
+      animation: slide 20s infinite;
+    }
+
+    slide:nth-child(1) {
+      left: 0%;
+      animation-delay: -1.0s;
+      background-image: url(123.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    slide:nth-child(2) {
+      left: 100%;
+      animation-delay: 4s;
+      background-image: url(interior_mural.JPG);
+      background-size: cover;
+      background-position: center;
+    }
+
+    slide:nth-child(3) {
+      left: 100%;
+      animation-delay: 9s;
+      background-image: url(portraiture.JPG);
+      background-size: cover;
+      background-position: center;
+    }
+
+    slide:nth-child(4) {
+      left: 100%;
+      animation-delay: 14s;
+      background-image: url(plance_cad.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    slide p {
+      font-size: 70px;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      margin-top: 500px;
+      color: #fff;
+      padding: 0;
+      background: linear-gradient(rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6));
+    }
+
+    @keyframes slide {
+      0% { left: 100%; width: 100%;}
+      5% { left: 0%;}
+      25% { left: 0%;}
+      30% { left: -100%; width: 100%;}
+      30.0001% { left: -100%; width: 0%;}
+      100% { left: 100%; width:0%;}
+    }
+
+    .label p{
+      font-size: 20px;
+      margin: 5px;
+      text-align: center;
+      color: #fff;
+    }
+
+    a:link, a:visited {
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    a:hover, a:active {
+      text-decoration: underline overline;
+    }
+  </style>
+  <body>
+    <div class="label">
+      <p><a href="index.html">< homepage</a></p>
+    </div>
+    <slider>
+        <slide><p>Watercolor</p></slide>
+        <slide><p>Interior Mural</p></slide>
+        <slide><p>Portraiture</p></slide>
+        <slide><p>3D CAD</p></slide>
+    </slider>
+  </body>
+</html> 
