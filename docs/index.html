@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>João Cartucho - Portfolio</title>
+      <meta charset="UTF-8">
+      <title>João Cartucho - Portfolio</title>
   </head>
 
   <style type="text/css">
-    body{
-      margin: 0;
-      padding: 0;
-      font-family: arial;
-      background-color: #000;
-    }
-    .portfolio-item h1{
-      font-size: 130px;
-    }
+    .container { text-align: center; }
+
+      body{
+        font-family: arial;
+        background-color: #000;
+        color: rgba(255,255,255,1);
+      }
+
     .portfolio-list{
-      color: rgba(255,255,255,1);
       text-align: center;
       list-style-type: none;
       padding: 0;
       box-sizing: border-box;
     }
+
     a:link, a:visited {
       color: white;
       text-align: center;
@@ -36,7 +35,7 @@
       background-size: cover;
       animation: animate 15s linear infinite;
     }
-    .robotics{
+    .engineering{
       background-image: url(robocup.JPG);
       background-size: cover;
       animation: animate 15s linear infinite;
@@ -52,27 +51,28 @@
       }
     }
 
-    .portfolio-list h4{
-      margin-top: 3%;
-      font-size: 20px;
+    img {
+      height: 2em;
+      border-radius: 50%;
+      vertical-align: middle;
     }
 
-    .portfolio-list p{
-      margin-top: 2%;
-      font-size: 20px;
-    }
+    h1 { font-size: 15vh; }
+    h2 { font-size: 7vh; }
   </style>
 
-  <body>
-    <ul class="portfolio-list">
-      <h4>João Cartucho <a href="https://github.com/Cartucho/resume/raw/master/joao_cartucho_cv.pdf"><b>> RESUME <</b></a></h4>
-      <p>"Let me introduce you to my little world..."</p>      <li class="portfolio-item">
-        <h1 class="art"><a href="art.html">art</a></h1>
-      </li>
 
-      <li class="portfolio-item">
-        <h1 class="robotics"><a href="robotics.html">robotics</a></h1>
-      </li>
-    </ul>
-  </body>
+  <div class="container">
+      <ul class="portfolio-list">
+        <li class="portfolio-item">
+          <h2><img src="img_profile.jpg"> <br>João Cartucho</h2>
+        </li>
+        <li class="portfolio-item">
+          <h1 class="art"><a href="art.html">art</a></h1>
+        </li>
+        <li class="portfolio-item">
+          <h1 class="engineering"><a href="engineering.html">engineering</a></h1>
+        </li>
+      </ul>
+  </div>
 </html>
