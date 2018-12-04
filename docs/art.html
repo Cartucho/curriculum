@@ -1,116 +1,141 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>João Cartucho - Portfolio</title>
-  </head>
-  <style type="text/css">
-    html, body {
-      width: 100%;
-      height: 100%;
-      padding: 0;
-      margin: 0px;
-      background-color: #000;
-      font-family: Comfortaa;
-    }
+      <title>João Cartucho - Portfolio</title>
+      <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+      * {
+          box-sizing: border-box;
+      }
 
-    slider {
-      display: block;
-      width: 100%;
-      height: 90%;
-      background-color: #1f1f1f;
-      overflow: hidden;
-      position: absolute;
-    }
+      body {
+          padding: 20px;
+          font-family: arial;
+      }
 
-    slider > * {
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 100%;
-      background-color: #1f1f1f;
-      overflow: hidden;
-      animation: slide 20s infinite;
-    }
+      /* Center website */
+      .main {
+          max-width: 1000px;
+          margin: auto;
+      }
 
-    slide:nth-child(1) {
-      left: 0%;
-      animation-delay: -1.0s;
-      background-image: url(123.jpg);
-      background-size: cover;
-      background-position: center;
-    }
+      h1 {
+          font-size: 50px;
+          word-break: break-all;
+      }
 
-    slide:nth-child(2) {
-      left: 100%;
-      animation-delay: 4s;
-      background-image: url(interior_mural.JPG);
-      background-size: cover;
-      background-position: center;
-    }
+      .row {
+          margin: 8px -16px;
+      }
 
-    slide:nth-child(3) {
-      left: 100%;
-      animation-delay: 9s;
-      background-image: url(portraiture.JPG);
-      background-size: cover;
-      background-position: center;
-    }
+      /* Add padding BETWEEN each column */
+      .row,
+      .row > .column {
+          padding: 8px;
+      }
 
-    slide:nth-child(4) {
-      left: 100%;
-      animation-delay: 14s;
-      background-image: url(plance_cad.jpg);
-      background-size: cover;
-      background-position: center;
-    }
+      /* Create four equal columns that floats next to each other */
+      .column {
+          float: left;
+          width: 50%;
+      }
 
-    slide p {
-      font-size: 70px;
-      text-align: center;
-      display: inline-block;
-      width: 100%;
-      margin-top: 500px;
-      color: #fff;
-      padding: 0;
-      background: linear-gradient(rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6));
-    }
+      /* Clear floats after rows */ 
+      .row:after {
+          content: "";
+          display: table;
+          clear: both;
+      }
 
-    @keyframes slide {
-      0% { left: 100%; width: 100%;}
-      5% { left: 0%;}
-      25% { left: 0%;}
-      30% { left: -100%; width: 100%;}
-      30.0001% { left: -100%; width: 0%;}
-      100% { left: 100%; width:0%;}
-    }
+      /* Content */
+      .content {
+          padding: 10px;
+      }
 
-    .label p{
-      font-size: 20px;
-      margin: 5px;
-      text-align: center;
-      color: #fff;
-    }
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 900px) {
+          .column {
+              width: 50%;
+          }
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+          .column {
+              width: 100%;
+          }
+      }
 
     a:link, a:visited {
-      color: white;
-      text-align: center;
+      color: black;
       text-decoration: none;
       display: inline-block;
     }
     a:hover, a:active {
       text-decoration: underline overline;
     }
-  </style>
-  <body>
-    <div class="label">
-      <p><a href="index.html">< homepage</a></p>
+
+      </style>
+  </head>
+
+<body>
+
+<!-- MAIN (Center website) -->
+
+<div class="main">
+
+
+<center>
+<h1><p style="font-size: 20px;"><a href="index.html">< homepage</a></p>João Cartucho</h1>
+</center>
+
+
+<hr>
+
+<h2>ART</h2>
+
+<div class="content">
+  <img src="123.jpg" alt="Watercolor" style="width:100%">
+  <h3>Watercolor painting</h3>
+  <!--<p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>-->
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="interior_mural.JPG" alt="Interior Mural (living room)" style="width:100%">
+      <h3>Interior Mural (living room)</h3>
+      <!--<p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>-->
     </div>
-    <slider>
-        <slide><p>Watercolor</p></slide>
-        <slide><p>Interior Mural</p></slide>
-        <slide><p>Portraiture</p></slide>
-        <slide><p>3D CAD</p></slide>
-    </slider>
-  </body>
-</html> 
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="bedroom.JPG" alt="Interior Mural (bedroom)" style="width:100%">
+      <h3>Interior Mural (bedroom)</h3>
+      <!--<p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>-->
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="portraiture.JPG" alt="Portraiture" style="width:100%">
+      <h3>Portraiture</h3>
+      <!--<p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>-->
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="plane_cad.jpg" alt="3dcad" style="width:100%">
+      <h3>3D CAD</h3>
+      <!--<p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>-->
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
+
