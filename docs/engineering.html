@@ -1,116 +1,149 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>João Cartucho - Portfolio</title>
-  </head>
-  <style type="text/css">
-    html, body {
-      width: 100%;
-      height: 100%;
-      padding: 0;
-      margin: 0px;
-      background-color: #000;
-      font-family: Comfortaa;
-    }
+      <title>João Cartucho - Portfolio</title>
+      <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+      * {
+          box-sizing: border-box;
+      }
 
-    slider {
-      display: block;
-      width: 100%;
-      height: 90%;
-      background-color: #1f1f1f;
-      overflow: hidden;
-      position: absolute;
-    }
+      body {
+          padding: 20px;
+          font-family: arial;
+      }
 
-    slider > * {
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 100%;
-      background-color: #1f1f1f;
-      overflow: hidden;
-      animation: slide 20s infinite;
-    }
+      /* Center website */
+      .main {
+          max-width: 1000px;
+          margin: auto;
+      }
 
-    slide:nth-child(1) {
-      left: 0%;
-      animation-delay: -1.0s;
-      background-image: url(pepper_50th.jpg);
-      background-size: cover;
-      background-position: center;
-    }
+      h1 {
+          font-size: 50px;
+          word-break: break-all;
+      }
 
-    slide:nth-child(2) {
-      left: 100%;
-      animation-delay: 4s;
-      background-image: url(gsoc.JPG);
-      background-size: cover;
-      background-position: center;
-    }
+      .row {
+          margin: 8px -16px;
+      }
 
-    slide:nth-child(3) {
-      left: 100%;
-      animation-delay: 9s;
-      background-image: url(hotel_room.JPG);
-      background-size: cover;
-      background-position: center;
-    }
+      /* Add padding BETWEEN each column */
+      .row,
+      .row > .column {
+          padding: 8px;
+      }
 
-    slide:nth-child(4) {
-      left: 100%;
-      animation-delay: 14s;
-      background-image: url(robocup.JPG);
-      background-size: cover;
-      background-position: center;
-    }
+      /* Create four equal columns that floats next to each other */
+      .column {
+          float: left;
+          width: 50%;
+      }
 
-    slide p {
-      font-size: 40px;
-      text-align: center;
-      display: inline-block;
-      width: 100%;
-      margin-top: 450px;
-      color: #fff;
-      padding: 0;
-      background: linear-gradient(rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6));
-    }
+      /* Clear floats after rows */ 
+      .row:after {
+          content: "";
+          display: table;
+          clear: both;
+      }
 
-    @keyframes slide {
-      0% { left: 100%; width: 100%;}
-      5% { left: 0%;}
-      25% { left: 0%;}
-      30% { left: -100%; width: 100%;}
-      30.0001% { left: -100%; width: 0%;}
-      100% { left: 100%; width:0%;}
-    }
+      /* Content */
+      .content {
+          padding: 10px;
+      }
 
-    .label p{
-      font-size: 20px;
-      margin: 5px;
-      text-align: center;
-      color: #fff;
-    }
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 900px) {
+          .column {
+              width: 50%;
+          }
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+          .column {
+              width: 100%;
+          }
+      }
 
     a:link, a:visited {
-      color: white;
-      text-align: center;
+      color: black;
       text-decoration: none;
       display: inline-block;
     }
     a:hover, a:active {
       text-decoration: underline overline;
     }
-  </style>
-  <body>
-    <div class="label">
-      <p><a href="index.html">< homepage</a></p>
+
+      </style>
+  </head>
+
+<body>
+
+<!-- MAIN (Center website) -->
+
+<div class="main">
+
+
+<center>
+<h1><p style="font-size: 20px;"><a href="index.html">< homepage</a></p>João Cartucho</h1>
+</center>
+
+
+<hr>
+
+<h2>Engineering</h2>
+
+<div class="content">
+  <img src="pepper_50th.jpg" alt="Robot playing Go Fish" style="width:100%">
+  <!-- START GRID -->
+  <div class="row">
+    <div class="column">
+      <div class="content">
+        <img src="pepper_50th_1.jpg" alt="Robot playing Go Fish 1" style="width:100%">
+      </div>
     </div>
-    <slider>
-        <slide><p>We made a robot play Go Fish against humans</p></slide>
-        <slide><p>Google Summer of Code</p></slide>
-        <slide><p>Coding in the hotel room</p></slide>
-        <slide><p>RoboCup</p></slide>
-    </slider>
-  </body>
-</html> 
+    <div class="column">
+      <div class="content">
+      <img src="pepper_50th_2.jpg" alt="Robot playing Go Fish 2" style="width:100%">
+      </div>
+    </div>
+  </div>
+  <!-- END GRID -->
+  <h3>Carnegie Mellon University - 50th Anniversary Celebration </h3>
+  <p>I made a robot play Go Fish in the exposition.</p>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="gsoc.JPG" alt="Google Summer of Code" style="width:100%">
+      <h3>Google, New York</h3>
+      <p>Student software developer for OpenCV (the leading open source computer vision library).</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="robocup.JPG" alt="RoboCup 2018" style="width:100%">
+      <h3>RoboCup 2018, Montreal</h3>
+      <p>I was part of the Portuguese team which ended up in 4th place in the RoboCup@Home international competition.</p>
+    </div>
+  </div>
+</div>
+<!-- END GRID -->
+
+<div class="content">
+  <img src="best_papper_nomination.jpg" alt="IROS best papper." style="width:100%">
+  <h3>IROS 2018, Madrid</h3>
+  <p>My first paper was nominated for the "Best RoboCup Paper Award".</p>
+</div>
+
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
+
